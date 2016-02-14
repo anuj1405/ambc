@@ -14,6 +14,15 @@ var Subscribe  = require('../app/models/Subscribe');
 app.get('/', function(req, res) {
 	res.render('index.html'); 
 });
+
+app.get('/gallery', function(req, res) {
+	res.render('gallery.html'); 
+});
+
+app.get('/contact', function(req, res) {
+	res.render('contact.html'); 
+});
+
 app.post('/subscription',function(req,res){
 	var subscription = new Subscribe();
 	subscription.name1 = req.body.name1;
