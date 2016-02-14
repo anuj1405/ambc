@@ -22,6 +22,10 @@ app.get('/gallery', function(req, res) {
 app.get('/contact', function(req, res) {
 	res.render('contact.html'); 
 });
+app.get('/membership', function(req, res) {
+	res.render('membership.html'); 
+});
+
 
 app.post('/subscription',function(req,res){
 	var subscription = new Subscribe();
